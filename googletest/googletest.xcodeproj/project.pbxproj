@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		EE0E89BB27252D6D00DE851F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE0E89BA27252D6D00DE851F /* main.cpp */; };
-		EE0E89C3272532B300DE851F /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0E89C22725328500DE851F /* libgtest.a */; };
-		EE0E89C5272532E200DE851F /* libgtest_main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0E89C4272532D100DE851F /* libgtest_main.a */; };
+		EE0E89CA27253C6D00DE851F /* libgtest_main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0E89C62725398800DE851F /* libgtest_main.a */; };
+		EE0E89CB27253C6D00DE851F /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0E89C72725398800DE851F /* libgtest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +29,8 @@
 		EE0E89BA27252D6D00DE851F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		EE0E89C22725328500DE851F /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = ../../../Desktop/cpp/googletest/build/lib/libgtest.a; sourceTree = "<group>"; };
 		EE0E89C4272532D100DE851F /* libgtest_main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest_main.a; path = ../../../Desktop/cpp/googletest/build/lib/libgtest_main.a; sourceTree = "<group>"; };
+		EE0E89C62725398800DE851F /* libgtest_main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest_main.a; path = test/googletest/build/lib/libgtest_main.a; sourceTree = "<group>"; };
+		EE0E89C72725398800DE851F /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = test/googletest/build/lib/libgtest.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,8 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE0E89C5272532E200DE851F /* libgtest_main.a in Frameworks */,
-				EE0E89C3272532B300DE851F /* libgtest.a in Frameworks */,
+				EE0E89CA27253C6D00DE851F /* libgtest_main.a in Frameworks */,
+				EE0E89CB27253C6D00DE851F /* libgtest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +74,8 @@
 		EE0E89C12725328400DE851F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EE0E89C62725398800DE851F /* libgtest_main.a */,
+				EE0E89C72725398800DE851F /* libgtest.a */,
 				EE0E89C4272532D100DE851F /* libgtest_main.a */,
 				EE0E89C22725328500DE851F /* libgtest.a */,
 			);
@@ -257,8 +261,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				HEADER_SEARCH_PATHS = /Users/irfan/projects/cpp/googletest/googletestlib/include;
-				LIBRARY_SEARCH_PATHS = /Users/irfan/projects/cpp/googletest/googletestlib/googlemock/gtest;
+				HEADER_SEARCH_PATHS = /Users/irfan/projects/cpp/googletest/test/googletest/googletest/include;
+				LIBRARY_SEARCH_PATHS = (
+					/Users/irfan/projects/cpp/googletest/test/googletest/googlemock/test,
+					"$(PROJECT_DIR)/test/googletest/build/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -267,8 +274,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				HEADER_SEARCH_PATHS = /Users/irfan/projects/cpp/googletest/googletestlib/include;
-				LIBRARY_SEARCH_PATHS = /Users/irfan/projects/cpp/googletest/googletestlib/googlemock/gtest;
+				HEADER_SEARCH_PATHS = /Users/irfan/projects/cpp/googletest/test/googletest/googletest/include;
+				LIBRARY_SEARCH_PATHS = (
+					/Users/irfan/projects/cpp/googletest/test/googletest/googlemock/test,
+					"$(PROJECT_DIR)/test/googletest/build/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
