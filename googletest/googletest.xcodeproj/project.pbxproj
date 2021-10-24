@@ -17,6 +17,10 @@
 		EE0E89DB27253E7E00DE851F /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0E89C72725398800DE851F /* libgtest.a */; };
 		EE0E89DE272569D400DE851F /* Checkout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE0E89DC272569D400DE851F /* Checkout.cpp */; };
 		EE0E89DF27256B7E00DE851F /* Checkout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE0E89DC272569D400DE851F /* Checkout.cpp */; };
+		EE0E89E22725F76F00DE851F /* libgmock_main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0E89E02725F76E00DE851F /* libgmock_main.a */; };
+		EE0E89E32725F76F00DE851F /* libgmock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0E89E12725F76E00DE851F /* libgmock.a */; };
+		EE0E89E42725F7CF00DE851F /* libgmock_main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0E89E02725F76E00DE851F /* libgmock_main.a */; };
+		EE0E89E52725F7CF00DE851F /* libgmock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0E89E12725F76E00DE851F /* libgmock.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +47,8 @@
 		EE0E89D727253DAC00DE851F /* GoogleTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GoogleTests.mm; path = "xcode-googletest/Bundle/GoogleTests.mm"; sourceTree = SOURCE_ROOT; };
 		EE0E89DC272569D400DE851F /* Checkout.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Checkout.cpp; sourceTree = "<group>"; };
 		EE0E89DD272569D400DE851F /* Checkout.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Checkout.hpp; sourceTree = "<group>"; };
+		EE0E89E02725F76E00DE851F /* libgmock_main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgmock_main.a; path = test/googletest/build/lib/libgmock_main.a; sourceTree = "<group>"; };
+		EE0E89E12725F76E00DE851F /* libgmock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgmock.a; path = test/googletest/build/lib/libgmock.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE0E89E42725F7CF00DE851F /* libgmock_main.a in Frameworks */,
+				EE0E89E52725F7CF00DE851F /* libgmock.a in Frameworks */,
 				EE0E89CA27253C6D00DE851F /* libgtest_main.a in Frameworks */,
 				EE0E89CB27253C6D00DE851F /* libgtest.a in Frameworks */,
 			);
@@ -59,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE0E89E22725F76F00DE851F /* libgmock_main.a in Frameworks */,
+				EE0E89E32725F76F00DE851F /* libgmock.a in Frameworks */,
 				EE0E89DA27253E7E00DE851F /* libgtest_main.a in Frameworks */,
 				EE0E89DB27253E7E00DE851F /* libgtest.a in Frameworks */,
 			);
@@ -99,6 +109,8 @@
 		EE0E89C12725328400DE851F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EE0E89E02725F76E00DE851F /* libgmock_main.a */,
+				EE0E89E12725F76E00DE851F /* libgmock.a */,
 				EE0E89C62725398800DE851F /* libgtest_main.a */,
 				EE0E89C72725398800DE851F /* libgtest.a */,
 				EE0E89C4272532D100DE851F /* libgtest_main.a */,
@@ -338,7 +350,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				HEADER_SEARCH_PATHS = /Users/irfan/projects/cpp/googletest/test/googletest/googletest/include;
+				HEADER_SEARCH_PATHS = (
+					/Users/irfan/projects/cpp/googletest/test/googletest/googletest/include,
+					/Users/irfan/projects/cpp/googletest/test/googletest/googlemock/include,
+				);
 				LIBRARY_SEARCH_PATHS = (
 					/Users/irfan/projects/cpp/googletest/test/googletest/googlemock/test,
 					"$(PROJECT_DIR)/test/googletest/build/lib",
@@ -351,7 +366,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				HEADER_SEARCH_PATHS = /Users/irfan/projects/cpp/googletest/test/googletest/googletest/include;
+				HEADER_SEARCH_PATHS = (
+					/Users/irfan/projects/cpp/googletest/test/googletest/googletest/include,
+					/Users/irfan/projects/cpp/googletest/test/googletest/googlemock/include,
+				);
 				LIBRARY_SEARCH_PATHS = (
 					/Users/irfan/projects/cpp/googletest/test/googletest/googlemock/test,
 					"$(PROJECT_DIR)/test/googletest/build/lib",
@@ -367,7 +385,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = /Users/irfan/projects/cpp/googletest/test/googletest/googletest/include;
+				HEADER_SEARCH_PATHS = (
+					/Users/irfan/projects/cpp/googletest/test/googletest/googletest/include,
+					/Users/irfan/projects/cpp/googletest/test/googletest/googlemock/include,
+				);
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -391,7 +412,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = /Users/irfan/projects/cpp/googletest/test/googletest/googletest/include;
+				HEADER_SEARCH_PATHS = (
+					/Users/irfan/projects/cpp/googletest/test/googletest/googletest/include,
+					/Users/irfan/projects/cpp/googletest/test/googletest/googlemock/include,
+				);
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
