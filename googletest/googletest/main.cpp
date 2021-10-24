@@ -5,10 +5,9 @@
 //  Created by Irfan on 24/10/21.
 //
 
-#include <iostream>
+#include <gtest/gtest.h>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+TEST(googletest_tests, AssertTrue){
+    ASSERT_TRUE(true);
 }
+
