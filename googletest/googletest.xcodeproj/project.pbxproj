@@ -15,6 +15,8 @@
 		EE0E89D927253E4C00DE851F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE0E89BA27252D6D00DE851F /* main.cpp */; };
 		EE0E89DA27253E7E00DE851F /* libgtest_main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0E89C62725398800DE851F /* libgtest_main.a */; };
 		EE0E89DB27253E7E00DE851F /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0E89C72725398800DE851F /* libgtest.a */; };
+		EE0E89DE272569D400DE851F /* Checkout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE0E89DC272569D400DE851F /* Checkout.cpp */; };
+		EE0E89DF27256B7E00DE851F /* Checkout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE0E89DC272569D400DE851F /* Checkout.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +41,8 @@
 		EE0E89D027253D7A00DE851F /* Unit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0E89D227253D7A00DE851F /* Unit_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Unit_Tests.m; sourceTree = "<group>"; };
 		EE0E89D727253DAC00DE851F /* GoogleTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GoogleTests.mm; path = "xcode-googletest/Bundle/GoogleTests.mm"; sourceTree = SOURCE_ROOT; };
+		EE0E89DC272569D400DE851F /* Checkout.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Checkout.cpp; sourceTree = "<group>"; };
+		EE0E89DD272569D400DE851F /* Checkout.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Checkout.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				EE0E89BA27252D6D00DE851F /* main.cpp */,
+				EE0E89DC272569D400DE851F /* Checkout.cpp */,
+				EE0E89DD272569D400DE851F /* Checkout.hpp */,
 			);
 			path = googletest;
 			sourceTree = "<group>";
@@ -199,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE0E89BB27252D6D00DE851F /* main.cpp in Sources */,
+				EE0E89DE272569D400DE851F /* Checkout.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +216,7 @@
 				EE0E89D827253DAC00DE851F /* GoogleTests.mm in Sources */,
 				EE0E89D327253D7A00DE851F /* Unit_Tests.m in Sources */,
 				EE0E89D927253E4C00DE851F /* main.cpp in Sources */,
+				EE0E89DF27256B7E00DE851F /* Checkout.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
