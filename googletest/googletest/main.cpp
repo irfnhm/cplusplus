@@ -47,3 +47,7 @@ TEST_F(CheckoutTest, CalculateTotalWithDiscount){
     int total = checkOut.calculateTotal();
     ASSERT_EQ(2, total);
 }
+
+TEST_F(CheckoutTest, ItemWithNoPriceThrowsException){
+    ASSERT_THROW(checkOut.addItem("a"), std::invalid_argument);
+}
