@@ -15,8 +15,8 @@ class Node {
 class LinkedList {
     public:
         void insertNode(Node** head, int data);
-        void insertNodeAfter();
-        void appendNode();
+        void insertNodeAfter(Node *prevNode, int data);
+        void appendNode(Node** head, int data);
         void showAllNodes(Node *node);
         void deleteNode();
 };
@@ -33,6 +33,17 @@ void LinkedList::showAllNodes(Node *node){
         cout << " " << node->data;
         node = node->next;
     }
+}
+
+void LinkedList::insertNodeAfter(Node *prevNode, int data){
+    if(prevNode != NULL){
+        return;
+    }
+
+    Node* newNode = new Node();
+    newNode->data = data;
+    newNode->next = prevNode->next;
+    prevNode->next = newNode;
 }
 
 int main(){
