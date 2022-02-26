@@ -1,5 +1,12 @@
 # Exploring modern C++
 
-This is a demo ongoing project to practice new c++ features. Mostly start from c++17 and is gonna inlcude c++20 features.
-Integrated `googltest` to be able to test and mock new c++ language feature implementations.
+This is a fun repo to practice:
+1. New C++ features.
+2. Data structures and algorithms.
+3. C++ mocking
+
+Mostly start from C++17 through C++20 features.
+The `googltest` is part of a seperate demo app within this repo.
+
+## Next
 Parallel and concurrency is to be added later as I move on with implementing basic features and new algorithms.
