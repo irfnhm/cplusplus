@@ -21,14 +21,12 @@ Feel free to use the code in this repository for educational purposes, personal 
 
 ## Contents
 
-The dsamax repository covers a wide range of algorithms and data structures, including but not limited to:
+The dsamax repository covers a range of algorithms and data structures, including but not limited to:
 
-- Sorting algorithms (e.g., bubble sort, selection sort, merge sort, quicksort)
-- Searching algorithms (e.g., linear search, binary search)
-- Graph algorithms (e.g., depth-first search, breadth-first search, Dijkstra's algorithm)
-- Dynamic programming
 - Data structures (e.g., arrays, linked lists, stacks, queues, trees, hash tables)
-- And more!
+- googltest (C++)
+- C++ stl
+- C++ feature demos
 
 
 
